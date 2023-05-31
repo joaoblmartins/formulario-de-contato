@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <meta name="description" content="exercícios form de contato Ford &lt;Enter&gt;">
+    <meta name="viewport" content="width='device-width', 
+initial-scale=1.0">
+    <meta name="description" content="exercícios form de 
+contato Ford &lt;Enter&gt;">
+    <link rel="stylesheet" href="./style.css">
 
     <title>Entre em contato</title>
 </head>
 <body>
 
-    <form action="https://formsubmit.co/joaoblmartins@outlook.com" method="POST">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <button type="submit">Clique para enviar</button>
+    <form id="form-contato" action="https://formsubmit.co/
+joaoblmartins@outlook.com" method="POST">
+
+        <label class="label" for="name">Nome</label>
+        <input type="text" name="name" placeholder="Digite seu 
+Nome aqui" required>
+
+        <label class="label" for="email">Email</label>
+        <input type="email" name="email" placeholder="Digite 
+seu Email aqui" required>
+
+        <label for="message">Mensagem</label>
+        <textarea type="text" name="message" cols="30" rows="5" 
+placeholder="Digite sua Mensagem aqui" required></
+textarea>
+
+        <!-- no plcaholder não é permitido deixar espaços entre 
+o required><\textarea> caso as fique espaços a mensagem 
+na caixa não aparece -->
+
+        <button type="submit"> Enviar </button>
    </form>
     
 </body>
